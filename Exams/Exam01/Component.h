@@ -10,7 +10,7 @@
 
 namespace ca
 {
-	class BusCom : public MemCell 
+	class BusCom : public ca::MemCell 
 	{
 		private:
 		BusCom& operator=(const BusCom&) = delete;

@@ -50,7 +50,7 @@ int main()
         std::string res = Invert(testcases[i]); // variable to store the result of inverting the test string
         std::cout << "Test " << (i+1) << " '" << testcases[i] << "' : " 
         << (res.empty() ? "This is not a binary string" : res) << std::endl;
-        /* Using a ternary operator I crafted a custom test that spits out the inverted string of digits
+        /* Using a ternary operator, I crafted a custom test that spits out the inverted string of digits
          IF it was a valid binary digit, or a custom error message if the result was an empty string.
         */
     }
