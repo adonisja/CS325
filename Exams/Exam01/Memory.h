@@ -50,10 +50,35 @@ namespace ca {
                 // Now we connect each Window/Part" based on the command
                 switch (cmd)
                 {
-                    case 0:  // 000 - Full Read (Memory -> Bus)
+                    case 0:     // 000 - Full Read (Memory -> Bus)
                         mem_word.transfer(data);
                         break;
+                    case 1:   // 001 - Full Write (Bus -> Memory)
+                        data.transfer(mem_word);
+                        break;
+                    case 2:     // 010 - Left Read (Memory Left -> Bus Left)
+                        mem_left.transfer(bus_left);
+                        break;
+                    case 3:     // 011 - Left Write (Bus Left -> Memory Left)
+                        bus_left.transfer(mem_left);
+                        break;
+                    case 4:     // 100 - Right Read (Memory Right -> Bus Left)
+                        mem_right.transfer(bus_left);
+                        break;
+                    case 5:     // 101 - Right Write (Bus Left -> Memory Right)
+                        bus_left.transfer(mem_right);
+                        break;
                 }
+            }
+
+            std::string manual() const override
+            {
+                return  "000: Full Read\n"
+                        "001: Full Write\n"
+                        "010: Left Read\n"
+                        "011: Left Write\n"
+                        "100: Right Read\n"
+                        "101: Right Write\n";
             }
     };
 }

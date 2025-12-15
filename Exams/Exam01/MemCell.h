@@ -27,7 +27,7 @@ namespace ca
 			while(n > 0)
 			{
 				n -= 1;
-				out << (get(n))?("1"):("0");
+				out << ((get(n))?("1"):("0"));
 			}
 			return out.str();
 		}

@@ -1,5 +1,5 @@
-#ifndef BUSH_H
-#define BUSH_H
+#ifndef BUS_H
+#define BUS_H
 
 #include "Component.h"
 
