@@ -10,7 +10,7 @@
 
 ### Question 2:
 #### Given that the address of the variables `M` and `N` are 24 and DC, respectively, write a symbolic representation of an IAS program that executes the statement
-$$M= \fract{2N - M}{N}$$
+$$M= \frac{2N - M}{N}$$
 
 Steps: 
 - LDA DC: Load N into the Accumulator.
