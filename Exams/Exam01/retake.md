@@ -103,7 +103,7 @@ Memory:
     00 1111 0000  
     - Invert the bits from the result (One's Complement)  
     00 1111 0000 => 11 0000 1111
-    - Then add 1 to the result
+    - Then add 1 to the result.  
     11 0000 1111 + 1 = 11 0001 0000
 - 413: 0110011101  
     413 - 256 ($2^8$) = 157  
