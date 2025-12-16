@@ -83,4 +83,39 @@ Memory:
     $\text{Sum them up we get: } 32 + 16 + 4 + 2 + 0.5 = 54.5$
 
 
-### Question 5: 
+### Question 5:  
+#### Convert each of the following numbers into a 10-bit two's complement representation. You must show working
+- 360: 0101101000  
+    Find the binary of 360:
+    360 - 256 ($2^8$) = 104  
+    104 - 64 ($2^6$) = 40  
+    40 - 32 ($2^5$) = 8  
+    8 - 8 ($2^3$) = 0  
+    so we place 1s in positions $2^8, 2^6, 2^5 and 2^3$.  
+    Res: 101101000 this is 9 bits, so we extend to 10, while considering that the 10th bit is the sign bit.  
+    Final Result: 01 0110 1000  
+- -240: 1100010000  
+    - Find the binary of (positive) 240:  
+    240 - 128 ($2^7$) = 112  
+    112 - 64 ($2^6$) = 48  
+    48 - 32 ($2^5$) = 16  
+    16 - 16 ($2^4$) = 0  
+    00 1111 0000  
+    - Invert the bits from the result (One's Complement)  
+    00 1111 0000 => 11 0000 1111
+    - Then add 1 to the result
+    11 0000 1111 + 1 = 11 0001 0000
+- 413: 0110011101  
+    413 - 256 ($2^8$) = 157  
+    157 - 128 ($2^7$) = 29  
+    29 - 16 ($2^4$) = 13  
+    13 - 8 ($2^3$) = 5
+    5 - 4 ($2^2$) = 1
+    1 - 1 ($2^0$) = 1
+    01 1001 1101
+
+### Question 6: 
+#### Convert each of the following binary numbers to their twos-complement negation. Provide the inversion and outcome for each number to receive full credit.
+- 1110 1100 0001 011
+- 0101 0000 0111 010
+- 1000 1101 0101 000
