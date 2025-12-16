@@ -59,6 +59,29 @@ Memory:
 
 ### Question 4:
 #### Convert each of the following numbers to the requested base. You must show work to receive full credit.
-- $DEC.CB_{16}$ to binary
-- $595_{10}$ to hexadecimal
+- $DEC.CB_{16}$ to binary = 110111101100.11001011_{2}
+    Mappings:
+    A -> 1010
+    B -> 1011
+    C -> 1100
+    D -> 1101
+    E -> 1110
+    F -> 1111
+- $595_{10}$ to hexadecimal = 253_{16}
+    $\frac{595}{16} = 37 R 3$
+    $\frac{37}{16} = 2 R 5$
+    $\frac{2}{16} = 0 R 2$  
+    Now we write the remainders from the bottom up
 - $110110.1_2$ to decimal
+    $$  2^5 × 1 = 32
+        2^4 × 1 = 16
+        2^3 × 0 = 0
+        2^2 × 1 = 4
+        2^1 x 1 = 2
+        2^0 × 0 = 0
+        2^{-1} × 1 = 0.5
+    \text{Sum them up we get: } 32 + 16 + 4 + 2 + 0.5 = 54.5
+    $$
+
+
+### Question 5: 
