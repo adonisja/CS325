@@ -73,15 +73,14 @@ Memory:
     $\frac{2}{16} = 0 R 2$   
     Now we write the remainders from the bottom up  
 - $110110.1_2$ to decimal  
-    $$  2^5 × 1 = 32  
+    $$2^5 × 1 = 32  
         2^4 × 1 = 16  
         2^3 × 0 = 0  
         2^2 × 1 = 4  
         2^1 x 1 = 2  
         2^0 × 0 = 0  
         2^{-1} × 1 = 0.5  
-    \text{Sum them up we get: } 32 + 16 + 4 + 2 + 0.5 = 54.5  
-    $$
+    \text{Sum them up we get: } 32 + 16 + 4 + 2 + 0.5 = 54.5$$
 
 
 ### Question 5: 
