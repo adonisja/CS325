@@ -136,7 +136,7 @@ Memory:
     Carry: 111111  
             011111  (31 in decimal)  
            +110111  (-9 in decimal)  
-           -------
+           -------  
             010110  
     Since we added a positive and a negative number, overflow is impossible, so we discard the carry of the Most Significant Bit leaving 010110.
 
