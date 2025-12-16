@@ -132,6 +132,7 @@ Memory:
 
 ### Question 7:
 #### Find the solution of each binary expression and state if overflow occurs, if applicable. Provide work to receive full credit.
+```
 - 011111 + 110111 = 010110  
     Carry: 111111  
             011111  (31 in decimal)  
@@ -158,7 +159,7 @@ Memory:
            -------  
             000000  
     No overflow occurred, added a negative and a positive number of the same magnitude getting a 0 as the result
-
+```
 
 ### Question 8:
 #### Find the solution of  1010 * 0011 using Booth's algorithm. Provide work to receive ful credit.
