@@ -152,6 +152,7 @@ Memory:
             ------  
             100101  
     Again we discard the extra carry, leaving 100101. Since we added two negative numbers and the result remained negative, then no overflow occurred
+
 - 100101 + 011011 = 000000.  
     Carry: 111111
             100101  (-27)
@@ -162,7 +163,7 @@ Memory:
 ```
 
 ### Question 8:
-#### Find the solution of  1010 * 0011 using Booth's algorithm. Provide work to receive ful credit.
+#### Find the solution of  1010 $\times$ 0011 using Booth's algorithm. Provide work to receive ful credit.
 
 
 ### Question 9:
