@@ -116,6 +116,55 @@ Memory:
 
 ### Question 6: 
 #### Convert each of the following binary numbers to their twos-complement negation. Provide the inversion and outcome for each number to receive full credit.
-- 1110 1100 0001 011
-- 0101 0000 0111 010
-- 1000 1101 0101 000
+- 1110 1100 0001 011  
+    Inversion: 111 0110 0000 1011 => 000 1001 1111 0100  
+    Add 1: 000 1001 1111 0100 + 1 = 000 1001 1111 0101
+    Outcome: 000 1001 1111 0101   
+- 0101 0000 0111 010  
+    Inversion: 010 1000 0011 1010 =>  101 0111 1100 0101  
+    Add 1: 101 0111 1100 0101 + 1 = 101 0111 1100 0110  
+    Outcome: 101 0111 1100 0110  
+- 1000 1101 0101 000  
+    Inversion: 100 0110 1010 1000 => 011 1001 0101 0111  
+    Add 1: 011 1001 0101 0111 + 1 = 011 1001 0101 1000  
+    Outcome: 011 1001 0101 1000
+
+
+### Question 7:
+#### Find the solution of each binary expression and state if overflow occurs, if applicable. Provide work to receive full credit.
+- 011111 + 110111  
+- 101011 - 000110  
+- 100101 + 011011
+
+
+### Question 8:
+#### Find the solution of  1010 * 0011 using Booth's algorithm. Provide work to receive ful credit.
+
+
+### Question 9:
+#### Perform each logical operator given that lls, lrs, als, ars, lrt and rrt represent logical left shift, logical right shift, arithmetic left shift, arithmetic right shift, left rotate and right rotate, respectively.
+- 0001 1011 ars 3
+- 1010 1101 lls 4
+- 0011 0101 als 4
+- 1101 1110 lrt 4
+- 1010 1010 rrt 3
+- 1000 0101 lrs 5
+
+
+### Question 10:
+### For each Boolean function ($F_i$) in the truth table below, write its product of sums (POS) and sum of products (SOP) representations.
+| A | B | C | $F_1$ | $F_2$ | $F_3$ | $F_4$|
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 0 | 0 | 1 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 1 | 0 |
+
+
+
+### Question 11:
+#### Simplify the Boolean functions from Question 10 using the K-map method. Provide work to receive full credit. 
