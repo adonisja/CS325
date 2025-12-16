@@ -133,12 +133,12 @@ Memory:
 ### Question 7:
 #### Find the solution of each binary expression and state if overflow occurs, if applicable. Provide work to receive full credit.
 - 011111 + 110111 = 010110  
-    Carry: 111111   
+    Carry: 111111  
             011111  (31 in decimal)  
            +110111  (-9 in decimal)  
            -------
-            010110
-    Since we added a positive and a negative number, overflow is impossible, so we discard the carry of the Most Significant Bit leaving 010110.  
+            010110  
+    Since we added a positive and a negative number, overflow is impossible, so we discard the carry of the Most Significant Bit leaving 010110.
 
 - 101011 - 000110 = 100101.  
     To subtract we add the two's complement of the second number:
