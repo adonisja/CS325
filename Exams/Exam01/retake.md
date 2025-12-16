@@ -35,21 +35,21 @@ Symbolic Program:
 ### Question 3:
 #### Using the list of instruction commands above, trace the code below using a trace table or list.
 Memory:
-- 000: 0100305002
+- 000: 0100305002  
     Disassembling the hex string of Memory 000: 01 003 05 002
     - Left side: Opcode 01 (LDA), Address 003
     - Right side: Opcode 05 (ADD), Address 002
-- 001: 1500021002
+- 001: 1500021002  
     Disassembling the hex string of Memory 001: 15 000 21 002
     - Left side: Opcode 15 (RSH), Address 000
     - Right side: Opcode 21 (STA), Address 002
-- 002: 0000000006
+- 002: 0000000006  
     The string of zeroes indicate a memory location so this is data located at $16^0 * 6 = 6$ => Memory Slot 6
-- 003: 0000000010
+- 003: 0000000010  
     The string of zeroes again indicates a memory location so this is data located at $16^1 * 1 = 16$ => Memory Slot 16
 
 #### Step-by-step Trace
-| Step | Instuction | Action | Register Status (AC) | Memory at 002 |
+| Step | Instruction | Action | Register Status (AC) | Memory at 002 |
 | :--- | :--- | :--- | :--- | :--- |
 | 0 | Initial State | Before program starts | 0 | 0000000006 |
 | 1 | 000 Left: LDA 003 | Load contents of addr 003 into AC | 10 | 6 |
@@ -59,6 +59,6 @@ Memory:
 
 ### Question 4:
 #### Convert each of the following numbers to the requested base. You must show work to receive full credit.
-- $DEC.CB_16$ to binary
-- $595_10$ to hexadecimal
+- $DEC.CB_{16}$ to binary
+- $595_{10}$ to hexadecimal
 - $110110.1_2$ to decimal
