@@ -188,7 +188,7 @@ We'll need four components:
 | Iteration | Step | A | Q | $Q_{-1}$ | Logic/Action |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Initial | - | 0000 | 0011 | 0 | Start |
-| 1 | $Q_0Q{-1} = 10$ | 0110 | 0011 | 0 | A = A - M (Add - M, which is 0110) |
+| 1 | $Q_0Q_{-1} = 10$ | 0110 | 0011 | 0 | A = A - M (Add - M, which is 0110) |
 |  | Shift | 0011 | 0001 | 1 | Arithmetic Right Shift |
 | 2 | 
 | 3 |
