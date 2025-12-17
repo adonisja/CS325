@@ -190,10 +190,12 @@ We'll need four components:
 | Initial | - | 0000 | 0011 | 0 | Start |
 | 1 | $Q_0Q_{-1} = 10$ | 0110 | 0011 | 0 | A = A - M (Add - M, which is 0110) |
 |  | Shift | 0011 | 0001 | 1 | Arithmetic Right Shift |
-| 2 | $Q_0Q_{-1} = 11$ | 0011 | 0001 | 1 | No addition (bits are the same) |
+| 2 | $Q_0Q_{-1} = 11$ | 0011 | 0001 | 1 | No addition (same bits) |
 |  | Shift | 0001 | 1000 | 1 | Arithmetic Right Shift |
-| 3 |
-| 4 |
+| 3 | $Q_0Q_{-1} = 01$ | 1011 | 1000 | 1 | A = A + M (Add 1010 to 0001) |
+|  | Shift | 1101 | 1100 | 0 | Arithmetic Right Shift |
+| 4 | $Q_0Q_{-1} = 00$ | 1101 | 1100 | 0 | No Addition (same bits) |
+|  | Shift | 1110 | 1110 | 0 | Arithmetic Right Shift |
 
 
 
