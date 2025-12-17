@@ -166,12 +166,37 @@ Memory:
            +011011  (+27)
            -------  
             000000 
-             
+
     No overflow occurred, added a negative and a positive number of the same magnitude getting a 0 as the result
 ```
 
 ### Question 8:
-#### Find the solution of  1010 $\times$ 0011 using Booth's algorithm. Provide work to receive ful credit.
+#### Find the solution of  1010 $\times$ 0011 using Booth's algorithm. Provide work to receive full credit.
+
+**Step 1**: Identify Multiplicand (M) and Multiplier (Q)  
+Multiplicand: 1010 
+    Because this is a Negative multiplicand, we need to negate 1010 using Two's Complement: Invert 1010 => 0101 +1 = 0110 (+6)
+Multiplier: 0011 (+3)  
+
+**Step 2:** Initialize the Table
+We'll need four components:
+- A (Accumulator): 0000 - The "Running Total" Workspace, starts at 0, and is 4 bits wide to match M
+- Q (Multiplier): 0011
+- $Q_{-1}$ (Extra Bit): 0
+- Count: 4 (Since we are using 4-bit numbers).
+
+| Iteration | Step | A | Q | $Q_{-1}$ | Logic/Action |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Initial | - | 0000 | 0011 | 0 | Start |
+| 1 | $Q_0Q{-1} = 10$ | 0110 | 0011 | 0 | A = A - M (Add - M, which is 0110) |
+|  | Shift | 0011 | 0001 | 1 | Arithmetic Right Shift |
+| 2 | 
+| 3 |
+| 4 |
+
+
+
+
 
 
 ### Question 9:
