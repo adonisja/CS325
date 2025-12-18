@@ -257,8 +257,7 @@ Final Table:
 | 0011 0101 als 4 | Arithmetic Left | Discard 0011, pad with 0000 | 0101 0000 |
 | 1101 1110 lrt 4 | Left Rotate | Swap nibbles | 1110 1101 |
 | 1010 1010 rrt 3 | Right Rotate | Wrap 010 to the front | 0101 0101 |
-| 1000 0101 lrs 5 | Logical Right | Discard 00101, pad with 00000 | 
-0000 0100 |
+| 1000 0101 lrs 5 | Logical Right | Discard 00101, pad with 00000 | 0000 0100 |
 
 
 ### Question 10:
