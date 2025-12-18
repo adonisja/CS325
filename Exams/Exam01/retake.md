@@ -200,16 +200,65 @@ We'll need four components:
 
 
 
-
-
 ### Question 9:
 #### Perform each logical operator given that lls, lrs, als, ars, lrt and rrt represent logical left shift, logical right shift, arithmetic left shift, arithmetic right shift, left rotate and right rotate, respectively.
-- 0001 1011 ars 3
+- 0001 1011 ars 3  
+    Rule: The Leftmost Bit is the sign bit, it dictates whether the number is negative or positive. Shift Right 3 spots. Keep the signed bit the same so fill the leftmost bit with the sign bit each shift  
+    Original: 0001 1011  
+    Step 1: 0000 1011 (Sign Bit: 0 copied)  
+    Step 2: 0000 0110  
+    Step 3: 0000 0011
+
 - 1010 1101 lls 4
+    Rule: Shift left, bits that fall off the edge are deleted, fill the empty right slots with 0s
+    Original: 1010 1101
+    Step 1: 0101 1010
+    Step 2: 1011 0100
+    Step 3: 0110 1000
+    Step 4: 1101 0000
+
 - 0011 0101 als 4
+    Rule: In modern systems this is similar to ars
+    Original: 0011 0101
+    Step 1: 0110 1010
+    Step 2: 1101 0100
+    Step 3: 1010 1000
+    Step 4: 0101 0000
+
 - 1101 1110 lrt 4
+    Rule: Basically rotate the bits in the directions stated (left in this case), think of how I utilize Ciphers
+    Original: 1101 1110
+    Step 1: 1011 1101
+    Step 2: 0111 1011
+    Step 3: 1111 0110
+    Step 4: 1110 1101
+
 - 1010 1010 rrt 3
+    Rule: Same as above (except right direction in this case)
+    Original: 1010 1010
+    Step 1: 0101 0101
+    Step 2: 1010 1010
+    Step 3: 0101 0101
+
 - 1000 0101 lrs 5
+    Rule: Shift right, bits that fall off the edge are deleted, fill the empty left slots with 0s
+    Original: 1000 0101
+    Step 1: 0100 0010
+    Step 2: 0010 0001
+    Step 3: 0001 0000
+    Step 4: 0000 1000
+    Step 5: 0000 0100
+
+Final Table:
+| Expression | Operator | Work/Shift Action | Final Result |
+| :--- | :--- | :--- | :--- |
+| 0001 1011 ars 3 | Arithmetic Right | Fill with Leading 0s | 0000 0011 |
+| 1010 1101 lls 4 | Logical Left | Discard 1010, pad with 0000 | 1101 0000 |
+| 0011 0101 als 4 | Arithmetic Left | Discard 0011, pad with 0000 | 0101 0000 |
+| 1101 1110 lrt 4 | Left Rotate | Swap nibbles | 1110 1101 |
+| 1010 1010 rrt 3 | Right Rotate | Wrap 010 to the front | 0101 0101 |
+| 1000 0101 lrs 5 | Logical Right | Discard 00101, pad with 00000 | 
+0000 0100 |
 
 
 ### Question 10:
