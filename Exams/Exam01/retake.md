@@ -322,6 +322,7 @@ For variables A, B, C, we place A on the rows and B, C on the columns using the 
 - *Power of 2 Rule*: In a K-map, you can only create groups of $2^n$ size. This means your groups must contain exactly: 1 cell, 2 cells, 4 cells, 8 cells
 
 - *The Adjacency (Gray Code) Rule*: Cells are arranged in the order 00, 01, 11, 10; however groups are formed only when coordinates are 1 bit different from each other, so despite 001, and 011, being next to each other, they cannot be in the same group since they are 2 bits away from each other.
+
 | A\BC | 00 | 01 | 11 | 10 |
 | :--- | :--- | :--- | :--- | :--- |
 | 0 | $m_0$ | $m_1$ | $m_3$ | $m_2$ |
