@@ -328,13 +328,23 @@ For variables A, B, C, we place A on the rows and B, C on the columns using the 
 | 0 | $m_0$ | $m_1$ | $m_3$ | $m_2$ |
 | 1 | $m_4$ | $m_5$ | $m_7$ | $m_6$ |
 
+Mappings: 
 
-- $F_1$
+| Binary (A B C) | Calculation | Decimal Index | $F_1$ value |
+| :--- | :--- | :--- | :--- |
+| 0 1 1 | (0 x 4) + (1 x 2) + (1 x 1) | 3 | 1 | 1 |
+| 1 0 0 | (1 x 4) + (0 x 2) + (0 x 1) | 4 | 1 | 1 |
+| 1 0 1 | (1 x 4) + (0 x 2) + (1 x 1) | 5 | 1 | 1 |
+| 1 1 1 | (1 x 4) + (1 x 2) + (1 x 1) | 7 | 1 | 1 |
+
+So the mapped indices with "1"s are 3, 4, 5, 7
+
+- $F_1$:
 
 | A\BC | 00 | 01 | 11 | 10 |
 | :--- | :--- | :--- | :--- | :--- |
-| 0 | 0 | 0 | 1 | 1 |
-| 1 | 0 | 1 | 1 | 0 |
+| 0 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 |
 
 
 
