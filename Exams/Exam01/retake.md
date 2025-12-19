@@ -273,7 +273,17 @@ Final Table:
 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
 | 1 | 1 | 1 | 1 | 0 | 1 | 0 |
 
+1. Sum of Products:
+    Rule: For each "1" row, create a "minterm" (multiply the variables)
+        - If the input is 0, write it as "not", (e.g. $\bar{A}$).
+        - If the input is 1, write it normally (e.g. A)
+        - All (OR) all the minterms together.
 
+2. Product of Sums:
+    Rule: For each 0 row, create a "maxterm" (add the variables).
+        - If the input is 0, write it normally (e.g. A)
+        - If the input is 1, write it as "not", (e.g. $\bar{A}$).
+        - Multiply (AND) all these maxterms together.
 
 ### Question 11:
 #### Simplify the Boolean functions from Question 10 using the K-map method. Provide work to receive full credit. 
