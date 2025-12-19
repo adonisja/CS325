@@ -332,10 +332,10 @@ Mappings:
 
 | Binary (A B C) | Calculation | Decimal Index | $F_1$ value |
 | :--- | :--- | :--- | :--- |
-| 0 1 1 | (0 x 4) + (1 x 2) + (1 x 1) | 3 | 1 | 1 |
-| 1 0 0 | (1 x 4) + (0 x 2) + (0 x 1) | 4 | 1 | 1 |
-| 1 0 1 | (1 x 4) + (0 x 2) + (1 x 1) | 5 | 1 | 1 |
-| 1 1 1 | (1 x 4) + (1 x 2) + (1 x 1) | 7 | 1 | 1 |
+| 0 1 1 | (0 x 4) + (1 x 2) + (1 x 1) | 3 | 1 |
+| 1 0 0 | (1 x 4) + (0 x 2) + (0 x 1) | 4 | 1 |
+| 1 0 1 | (1 x 4) + (0 x 2) + (1 x 1) | 5 | 1 |
+| 1 1 1 | (1 x 4) + (1 x 2) + (1 x 1) | 7 | 1 |
 
 So the mapped indices with "1"s are 3, 4, 5, 7
 
@@ -346,5 +346,21 @@ So the mapped indices with "1"s are 3, 4, 5, 7
 | 0 | 0 | 0 | 1 | 0 |
 | 1 | 1 | 1 | 1 | 0 |
 
+Find the Prime Implicants (groups that are absolutely necessary to cover every 1), I see for indices 3 and 7, they are neighbors, A changes, so I'll disregard A, while BC are similar so this is a valid group; next we see indices 4, 5, 7; however we can only use $2^n$ number of indices for a group; index 7 is already a part of the previous group so we use 4 & 5 making that my second group, where C changes however A and $\bar{B}$ are similar so my answer is:  
+$F_1 = A\bar{B} + BC$
 
+- $F_2$: 
 
+Mappings: 
+
+| Binary (A B C) | Calculation | Decimal Index | $F_1$ value |
+| :--- | :--- | :--- | :--- |
+| 0 0 0 | (0 x 4) + (0 x 2) + (0 x 1) | 0 | 1 |
+| 0 0 1 | (0 x 4) + (0 x 2) + (1 x 1) | 1 | 1 |
+| 0 1 1 | (0 x 4) + (1 x 2) + (1 x 1) | 3 | 1 |
+| 1 0 0 | (1 x 4) + (1 x 2) + (1 x 1) | 7 | 1 |
+
+| A\BC | 00 | 01 | 11 | 10 |
+| :--- | :--- | :--- | :--- | :--- |
+| 0 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 |
