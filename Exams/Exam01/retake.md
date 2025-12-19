@@ -67,11 +67,13 @@ Memory:
     D -> 1101
     E -> 1110
     F -> 1111
+    
 - $595_{10} \text{ to hexadecimal} = 253_{16}$  
     $\frac{595}{16} = 37 R 3$  
     $\frac{37}{16} = 2 R 5$  
     $\frac{2}{16} = 0 R 2$   
     Now we write the remainders from the bottom up  
+
 - $110110.1_2$ to decimal  
     $2^5 × 1 = 32$  
     $2^4 × 1 = 16$  
@@ -94,6 +96,7 @@ Memory:
     so we place 1s in positions $2^8, 2^6, 2^5 and 2^3$.  
     Res: 101101000 this is 9 bits, so we extend to 10, while considering that the 10th bit is the sign bit.  
     Final Result: 01 0110 1000  
+
 - -240: 1100010000  
     - Find the binary of (positive) 240:  
     240 - 128 ($2^7$) = 112  
@@ -105,6 +108,7 @@ Memory:
     00 1111 0000 => 11 0000 1111
     - Then add 1 to the result.  
     11 0000 1111 + 1 = 11 0001 0000
+
 - 413: 0110011101  
     413 - 256 ($2^8$) = 157  
     157 - 128 ($2^7$) = 29  
@@ -120,10 +124,12 @@ Memory:
     Inversion: 111 0110 0000 1011 => 000 1001 1111 0100  
     Add 1: 000 1001 1111 0100 + 1 = 000 1001 1111 0101
     Outcome: 000 1001 1111 0101   
+
 - 0101 0000 0111 010  
     Inversion: 010 1000 0011 1010 =>  101 0111 1100 0101  
     Add 1: 101 0111 1100 0101 + 1 = 101 0111 1100 0110  
     Outcome: 101 0111 1100 0110  
+
 - 1000 1101 0101 000  
     Inversion: 100 0110 1010 1000 => 011 1001 0101 0111  
     Add 1: 011 1001 0101 0111 + 1 = 011 1001 0101 1000  
