@@ -290,7 +290,7 @@ Final Table:
     - 0s: 000, 001, 010, 110  
 
     SOP: $\bar{A}BC + A\bar{B}\bar{C} + A\bar{B}C + ABC$  
-    POS: $(A + \bar{B} + \bar{C})(\bar{A} + B + C)(\bar{A} + B + \bar{C})(\bar{A} + \bar{B} + \bar{C}) $ 
+    POS: $(A + B + C)(A + B + \bar{C})(A + \bar{B} + C)(\bar{A} + \bar{B} + C) $ 
 
 - $F_2$:
     - 1s:
