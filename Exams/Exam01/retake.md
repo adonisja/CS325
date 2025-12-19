@@ -330,6 +330,7 @@ For variables A, B, C, we place A on the rows and B, C on the columns using the 
 
 
 - $F_1$
+
 | A\BC | 00 | 01 | 11 | 10 |
 | :--- | :--- | :--- | :--- | :--- |
 | 0 | 0 | 0 | 1 | 1 |
