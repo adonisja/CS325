@@ -315,3 +315,24 @@ Final Table:
 
 ### Question 11:
 #### Simplify the Boolean functions from Question 10 using the K-map method. Provide work to receive full credit. 
+
+**Guide:** We map the truth table values into a grid where adjacent values differ by one bit. We then group the "1"s in the largest possible powers of 2 (1, 2, 4, 8) to find the simplest expression. 
+For variables A, B, C, we place A on the rows and B, C on the columns using the Gray code order: 00, 01, 11, 10.
+**Rules:** 
+- *Power of 2 Rule*: In a K-map, you can only create groups of $2^n$ size. This means your groups must contain exactly: 1 cell, 2 cells, 4 cells, 8 cells
+
+- *The Adjacency (Gray Code) Rule*: Cells are arranged in the order 00, 01, 11, 10; however groups are formed only when coordinates are 1 bit different from each other, so despite 001, and 011, being next to each other, they cannot be in the same group since they are 2 bits away from each other.
+| A\BC | 00 | 01 | 11 | 10 |
+| :--- | :--- | :--- | :--- | :--- |
+| 0 | $m_0$ | $m_1$ | $m_3$ | $m_2$ |
+| 1 | $m_4$ | $m_5$ | $m_7$ | $m_6$ |
+
+
+- $F_1$
+| A\BC | 00 | 01 | 11 | 10 |
+| :--- | :--- | :--- | :--- | :--- |
+| 0 | 0 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 1 | 0 |
+
+
+
