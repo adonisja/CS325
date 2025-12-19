@@ -296,7 +296,7 @@ Final Table:
     - 1s: 000, 001, 011, 100  
     - 0s: 010, 101, 110, 111  
 
-    SOP: $\bar{A}\bar{B}\bar{C} + \bar{A}\bar{B}C + \bar{A}BC + A\bar{B}\bar{C}$
+    SOP: $\bar{A}\bar{B}\bar{C} + \bar{A}\bar{B}C + \bar{A}BC + A\bar{B}\bar{C}$  
     POS: $(A +\bar{B} + C)(\bar{A} + B + \bar{C})(\bar{A} + \bar{B} + C)(\bar{A}\bar{B}\bar{C})$
 
 - $F_3$:
