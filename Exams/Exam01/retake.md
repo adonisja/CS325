@@ -370,5 +370,62 @@ For this I see:
 - Index 1 has 2 neighbors: 0, 3
 - Index 3 has 1 neighbor: 1
 - Index 4 has 1 neighbor: 0
-So using the Essential Prime Implicants:
+
+So using the Essential Prime Implicants:  
 $F_2 = /bar{A}C + /bar{B}/bar{C}$
+
+- $F_3$:
+
+Mappings: 
+
+| Binary (A B C) | Calculation | Decimal Index | $F_1$ value |
+| :--- | :--- | :--- | :--- |
+| 0 0 0 | (0 x 4) + (0 x 2) + (0 x 1) | 0 | 1 |
+| 0 0 1 | (0 x 4) + (0 x 2) + (1 x 1) | 1 | 1 |
+| 0 1 1 | (0 x 4) + (1 x 2) + (1 x 1) | 3 | 1 |
+| 1 0 1 | (1 x 4) + (0 x 2) + (1 x 1) | 5 | 1 |
+| 1 1 0 | (1 x 4) + (1 x 2) + (0 x 1) | 6 | 1 |
+| 1 1 1 | (1 x 4) + (1 x 2) + (1 x 1) | 7 | 1 |
+
+| A\BC | 00 | 01 | 11 | 10 |
+| :--- | :--- | :--- | :--- | :--- |
+| 0 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 1 | 1 |
+
+For this I see:  
+- Index 0 has 1 neighbors: 1
+- Index 1 has 3 neighbors: 0, 3, 5
+- Index 3 has 2 neighbors: 1, 7
+- Index 5 has 1 neighbor: 1, 7
+- Index 6 has 1 neighbor: 7
+- Index 7 has 3 neighbors: 3, 5, 6
+
+This demonstrates a quad block where indices 1, 3, 5, 7 are neigbors of each other (only 1 bit away), where A and B changes (so we discard both), however C remains the same. Then the remaining indices: index 0 is neighbors with index 1, and index 7 is neighbors.
+
+So using the Essential Prime Implicants:  
+$F_3 = C + /bar{A}/bar{B} + AB$
+
+- $F_4$:
+
+Mappings: 
+
+| Binary (A B C) | Calculation | Decimal Index | $F_1$ value |
+| :--- | :--- | :--- | :--- |
+| 0 1 0 | (0 x 4) + (1 x 2) + (0 x 1) | 2 | 1 |
+| 0 1 1 | (0 x 4) + (1 x 2) + (1 x 1) | 3 | 1 |
+| 1 0 0 | (1 x 4) + (0 x 2) + (0 x 1) | 4 | 1 |
+| 1 0 1 | (1 x 4) + (0 x 2) + (1 x 1) | 5 | 1 |
+
+| A\BC | 00 | 01 | 11 | 10 |
+| :--- | :--- | :--- | :--- | :--- |
+| 0 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 0 |
+
+For this I see:  
+- Index 2 has 1 neighbors: 3
+- Index 3 has 1 neighbors: 2
+- Index 4 has 1 neighbor: 5
+- Index 5 has 1 neighbor: 4  
+
+So using the Essential Prime Implicants:  
+$F_4 = /bar{A}B + A/bar{B}$
