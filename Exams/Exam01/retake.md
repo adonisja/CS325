@@ -285,5 +285,21 @@ Final Table:
         - If the input is 1, write it as "not", (e.g. $\bar{A}$).
         - Multiply (AND) all these maxterms together.
 
+- $F_1$: 
+    - 1s: 011, 100, 101, 111
+    - 0s: 000, 001, 010, 110
+
+- $F_2$:
+    - 1s:
+    - 0s:
+
+- $F_3$:
+    - 1s:
+    - 0s:
+
+- $F_4$:
+    - 1s:
+    - 0s:
+
 ### Question 11:
 #### Simplify the Boolean functions from Question 10 using the K-map method. Provide work to receive full credit. 
