@@ -303,8 +303,8 @@ Final Table:
     - 1s: 000, 001, 011, 101, 110, 111  
     - 0s: 010, 100  
 
-    SOP:
-    POS:
+    SOP: $\bar{A}\bar{B}\bar{C} + \bar{A}\bar{B}C + \bar{A}BC + A\bar{B}C + AB\bar{C} + ABC$  
+    POS: $(A + \bar{B} + C)(\bar{A} + B + C)$  
 
 - $F_4$:
     - 1s: 010, 011, 100, 101  
