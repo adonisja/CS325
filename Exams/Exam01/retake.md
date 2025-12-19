@@ -293,16 +293,25 @@ Final Table:
     POS: $(A + B + C)(A + B + \bar{C})(A + \bar{B} + C)(\bar{A} + \bar{B} + C) $ 
 
 - $F_2$:
-    - 1s:
-    - 0s:
+    - 1s: 000, 001, 011, 100  
+    - 0s: 010, 101, 110, 111  
+
+    SOP: $\bar{A}\bar{B}\bar{C} + \bar{A}\bar{B}C + \bar{A}BC + A\bar{B}\bar{C}$
+    POS: $(A +\bar{B} + C)(\bar{A} + B + \bar{C})(\bar{A} + \bar{B} + C)(\bar{A}\bar{B}\bar{C})$
 
 - $F_3$:
-    - 1s:
-    - 0s:
+    - 1s: 000, 001, 011, 101, 110, 111  
+    - 0s: 010, 100  
+
+    SOP:
+    POS:
 
 - $F_4$:
-    - 1s:
-    - 0s:
+    - 1s: 010, 011, 100, 101  
+    - 0s: 000, 001, 110, 111  
+
+    SOP:
+    POS:
 
 ### Question 11:
 #### Simplify the Boolean functions from Question 10 using the K-map method. Provide work to receive full credit. 
