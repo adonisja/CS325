@@ -358,9 +358,17 @@ Mappings:
 | 0 0 0 | (0 x 4) + (0 x 2) + (0 x 1) | 0 | 1 |
 | 0 0 1 | (0 x 4) + (0 x 2) + (1 x 1) | 1 | 1 |
 | 0 1 1 | (0 x 4) + (1 x 2) + (1 x 1) | 3 | 1 |
-| 1 0 0 | (1 x 4) + (1 x 2) + (1 x 1) | 7 | 1 |
+| 1 0 0 | (1 x 4) + (0 x 2) + (0 x 1) | 4 | 1 |
 
 | A\BC | 00 | 01 | 11 | 10 |
 | :--- | :--- | :--- | :--- | :--- |
-| 0 | 0 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 0 |
+| 1 | 1 | 0 | 0 | 0 |
+
+For this I see:  
+- Index 0 has 2 neighbors: 1, 4
+- Index 1 has 2 neighbors: 0, 3
+- Index 3 has 1 neighbor: 1
+- Index 4 has 1 neighbor: 0
+So using the Essential Prime Implicants:
+$F_2 = /bar{A}C + /bar{B}/bar{C}$
