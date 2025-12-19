@@ -286,10 +286,10 @@ Final Table:
         - Multiply (AND) all these maxterms together.
 
 - $F_1$: 
-    - 1s: 011, 100, 101, 111
-    - 0s: 000, 001, 010, 110
+    - 1s: 011, 100, 101, 111  
+    - 0s: 000, 001, 010, 110  
 
-    SOP: $\bar{A}BC, A\bar{BC}, A\bar{B}C, ABC$
+    SOP: $\bar{A}BC, A\bar{BC}, A\bar{B}C, ABC$  
 
 - $F_2$:
     - 1s:
