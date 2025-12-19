@@ -310,8 +310,8 @@ Final Table:
     - 1s: 010, 011, 100, 101  
     - 0s: 000, 001, 110, 111  
 
-    SOP:
-    POS:
+    SOP: $\bar{A}B\bar{C} + \bar{A}BC + A\bar{B}\bar{C} + A\bar{B}C$  
+    POS: $(A + B + C)(A + B + \bar{C})(\bar{A} + \bar{B} + C)(\bar{A} + \bar{B} + \bar{C})$
 
 ### Question 11:
 #### Simplify the Boolean functions from Question 10 using the K-map method. Provide work to receive full credit. 
